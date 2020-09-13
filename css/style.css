@@ -51,6 +51,7 @@ body {
   padding: 10px 15px;
   display: inline-block;
   margin: 30px 0;
+  font-size: 1.1rem;
 }
 
 .h1 {
@@ -76,6 +77,7 @@ section::after {
   height: 400px;
   background: linear-gradient(to top, #111, transparent);
 }
+
 .banner::before,
 .banner-two::before,
 .banner-three::before {
@@ -87,6 +89,7 @@ section::after {
   height: 400px;
   background: linear-gradient(to bottom, #111, transparent);
 }
+
 /* Header Style */
 header {
   color: #fff;
@@ -122,6 +125,7 @@ header .logo {
 .banner .content p {
   font-size: 1.2rem;
 }
+
 .banner .content h1 {
   font-size: 5em;
   font-weight: 800;
@@ -134,12 +138,15 @@ header .logo {
   color: #fff;
   padding-right: 30px;
 }
+
 .about .content p {
   max-width: 600px;
 }
+
 .about .img {
   width: 500px;
 }
+
 /* Banner Two Style */
 .banner-two {
   min-height: 100vh;
@@ -171,13 +178,13 @@ header .logo {
   width: 300px;
   height: 480px;
   margin: 20px;
-  transition: 0.5s;
+  transition: opacity .6s ease-in-out;
   background-color: #191919;
   cursor: pointer;
 }
 
 .destination .boxes:hover .box {
-  opacity: 0.4;
+  opacity: 0.1;
 }
 
 .destination .boxes .box:hover {
@@ -246,23 +253,28 @@ footer .footer__content a {
   .about {
     flex-direction: column;
   }
+
   .about .content {
     max-width: 100%;
     padding-right: 0;
     text-align: center;
   }
 }
+
 @media screen and (max-width: 767px) {
   section {
     padding: 40px;
   }
+
   .banner .content h1 {
     font-size: 3em;
     margin-bottom: 10px;
   }
+
   .about {
     flex-direction: column;
   }
+
   .about .img {
     width: 100%;
   }
